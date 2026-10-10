@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>🎉 Thiệp Chúc Mừng 3D - Cơn Mưa Lời Chúc & Quà Cáp 🎂</title>
+  <title>🎂 Chúc mừng sinh nhật Hữu Lãm!</title>
   <meta name="description" content="Thiệp chúc mừng 3D tương tác không gian: Lời chúc rực rỡ, gấu bông, bó hoa tươi, hộp quà, bánh kem và âm nhạc du dương.">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
@@ -50,7 +50,7 @@
     .bg-photo-layer {
       position: absolute;
       inset: 0;
-      background-image: url('anh-xa-bong-hoang.jpg');
+      background-image: url('huu-lam.svg');
       background-size: cover;
       background-position: center 25%;
       background-repeat: no-repeat;
@@ -219,6 +219,8 @@
       50% { transform: scale(1.05); box-shadow: 0 16px 44px rgba(255, 65, 108, 0.85), 0 0 30px rgba(255, 215, 0, 0.55); }
     }
   </style>
+  <meta name="description" content="Một món quà sinh nhật 3D dành riêng cho Hữu Lãm – ngập tràn lời chúc, bánh kem và kỷ niệm.">
+  <link rel="preload" as="image" href="huu-lam.svg">
 </head>
 <body>
 
@@ -239,7 +241,7 @@
   <!-- Audio Element (playsinline, autoplay, preload=auto) -->
   <audio id="bg-music" src="happy-birthday.mp3" loop autoplay playsinline preload="auto"></audio>
 
-  <!-- Background Photo of Anh Xà Bông Hoàng -->
+  <!-- Ảnh nền của Hữu Lãm -->
   <div class="bg-photo-layer" id="bg-photo"></div>
   <div class="bg-overlay"></div>
 
@@ -894,10 +896,10 @@
 
       const loader = new THREE.TextureLoader();
       loader.load(url, (tex) => {
-        const photoGeo = new THREE.PlaneGeometry(2.1, 2.1);
+        const photoGeo = new THREE.PlaneGeometry(2.05, 2.60);
         const photoMat = new THREE.MeshBasicMaterial({ map: tex });
         const photo = new THREE.Mesh(photoGeo, photoMat);
-        photo.position.set(0, 0.3, 0.05);
+        photo.position.set(0, 0.13, 0.05);
         group.add(photo);
       });
 
