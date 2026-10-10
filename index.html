@@ -50,19 +50,19 @@
     .bg-photo-layer {
       position: absolute;
       inset: 0;
-      background-image: url('huu-lam.svg');
-      background-size: cover;
-      background-position: center 25%;
+      background-image: url('huu-lam.jpg'), url('huu-lam.svg');
+      background-size: cover, cover;
+      background-position: center 25%, center 25%;
       background-repeat: no-repeat;
       z-index: 0;
-      opacity: 0.85;
-      filter: saturate(1.12) contrast(1.06);
+      opacity: 0.95;
+      filter: saturate(1.05) contrast(1.04);
     }
 
     .bg-overlay {
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 50% 36%, rgba(12, 4, 24, 0.26) 0%, rgba(9, 3, 18, 0.68) 72%, rgba(5, 1, 10, 0.90) 100%);
+      background: radial-gradient(circle at 50% 36%, rgba(12, 4, 24, 0.14) 0%, rgba(9, 3, 18, 0.43) 72%, rgba(5, 1, 10, 0.72) 100%);
       z-index: 0;
       pointer-events: none;
     }
@@ -220,7 +220,7 @@
     }
   </style>
   <meta name="description" content="Một món quà sinh nhật 3D dành riêng cho Hữu Lãm – ngập tràn lời chúc, bánh kem và kỷ niệm.">
-  <link rel="preload" as="image" href="huu-lam.svg">
+  <link rel="preload" as="image" href="huu-lam.jpg">
 </head>
 <body>
 
@@ -895,12 +895,15 @@
       group.add(frame);
 
       const loader = new THREE.TextureLoader();
-      loader.load(url, (tex) => {
+      const addPhoto = (tex) => {
         const photoGeo = new THREE.PlaneGeometry(2.05, 2.60);
         const photoMat = new THREE.MeshBasicMaterial({ map: tex });
         const photo = new THREE.Mesh(photoGeo, photoMat);
         photo.position.set(0, 0.13, 0.05);
         group.add(photo);
+      };
+      loader.load(url, addPhoto, undefined, () => {
+        if (url !== 'huu-lam.svg') loader.load('huu-lam.svg', addPhoto);
       });
 
       group.position.set(startX, startY, startZ);
