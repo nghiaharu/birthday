@@ -7,7 +7,7 @@ window.CARD_CONFIG = {
   recipientName: "Hữu Lãm",
   occasionTitle: "Chúc Mừng Sinh Nhật",
   musicUrl: "happy-birthday.mp3",
-  photos: ["huu-lam.svg"],
+  photos: ["huu-lam.jpg"],
   giftSettings: {
     enableTeddyBear: true,
     enableFlowerBouquet: true,
