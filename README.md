@@ -16,7 +16,7 @@ Thiệp 3D dành riêng cho **Hữu Lãm**, được tùy biến từ [Vuiver/th
 
 Chỉnh người nhận và lời chúc trong `config.js`, giữ định dạng `window.CARD_CONFIG = {...}`.
 
-Ảnh hiện đặt tại `huu-lam.svg`. Đây là bản ảnh thu nhỏ được tối ưu; có thể thay bằng `huu-lam.jpg` độ phân giải gốc và sửa 2 đường dẫn tương ứng trong `config.js` và `index.html` nếu muốn hình nét hơn.
+**Ảnh chất lượng cao:** tải ảnh gốc `huu-lam.jpg` (1290×1738) lên thư mục gốc của repo bằng giao diện **Add file → Upload files → Commit changes**. `index.html` và `config.js` đã cấu hình ưu tiên ảnh JPG, và tự dùng bản `huu-lam.svg` nếu JPG chưa có. Không cần sửa lại code sau khi tải ảnh lên.
 
 Trang sử dụng Three.js và nhạc nền từ mẫu gốc. Trên điện thoại, có thể cần chạm vào màn hình để bật nhạc.
 
