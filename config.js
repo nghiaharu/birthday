@@ -1,85 +1,72 @@
 /**
- * =========================================================================
- * CẤU HÌNH THIỆP CHÚC MỪNG 3D (THIEP-CHUC-MUNG CONFIG)
- * =========================================================================
- * Chủ đề: Chúc mừng sinh nhật anh Xà Bông Hoàng 🎂
+ * Thiệp chúc mừng sinh nhật 3D dành riêng cho Hữu Lãm.
+ * Chỉnh sửa từ mẫu gốc: https://github.com/Vuiver/thiep-chuc-mung
+ * Khai báo qua window.CARD_CONFIG để index.html đọc được chính xác.
  */
-
-const CARD_CONFIG = {
-  // 1. THÔNG TIN NGƯỜI NHẬN & DỊP KỶ NIỆM
-  recipientName: "Anh Xà Bông Hoàng",
+window.CARD_CONFIG = {
+  recipientName: "Hữu Lãm",
   occasionTitle: "Chúc Mừng Sinh Nhật",
-
-  // 2. NHẠC NỀN
   musicUrl: "happy-birthday.mp3",
-
-  // 3. ẢNH KỶ NIỆM (Hiển thị dạng khung ảnh Polaroid 3D rơi lơ lửng)
-  photos: [
-    "anh-xa-bong-hoang.jpg"
-  ],
-
-  // 4. BẬT / TẮT CÁC LOẠI QUÀ 3D
+  photos: ["huu-lam.svg"],
   giftSettings: {
-    enableTeddyBear: true,     // 🧸 Gấu bông 3D dễ thương
-    enableFlowerBouquet: true, // 💐 Bó hoa tươi rực rỡ
-    enableBirthdayCake: true,  // 🎂 Bánh kem cắm nến
-    enableGiftBox: true,       // 🎁 Hộp quà buộc nơ vàng
-    enableHeart: true,         // ❤️ Trái tim 3D đỏ thắm
-    enableBalloon: true,       // 🎈 Bóng bay đủ màu
-    giftDensity: 28            // Số lượng quà cáp rơi đồng thời
+    enableTeddyBear: true,
+    enableFlowerBouquet: true,
+    enableBirthdayCake: true,
+    enableGiftBox: true,
+    enableHeart: true,
+    enableBalloon: true,
+    giftDensity: 28
   },
-
-  // 5. DANH SÁCH LỜI CHÚC DÀNH RIÊNG CHO ANH XÀ BÔNG HOÀNG
   messages: [
-    "🎂 HAPPY BIRTHDAY ANH XÀ BÔNG HOÀNG 🎂",
-    "👑 Chúc Mừng Sinh Nhật Anh Xà Bông Hoàng! 👑",
-    "✨ Tuổi Mới Thơm Tho Rực Rỡ - Vạn Sự Hanh Thông ✨",
-    "🧼 Xà Bông Hoàng Mãi Đỉnh - Tẩy Sạch Mọi Âu Lo 💎",
-    "💰 Tiền Vào Như Nước Sông Đà - Đếm Tiền Gãy Cả Tay 💵",
-    "☕ Tiền Ra Nhỏ Giọt Cà Phê Phin ☕",
-    "🚀 Sự Nghiệp Thăng Hoa - Đỉnh Cao Bứt Phá 📈",
-    "🌟 Phong Độ Ngời Ngời - Đẹp Trai Bất Chấp Thời Gian 😎",
-    "💪 Sức Khỏe Vô Biên - Tinh Thần Thép 💪",
-    "🏆 Một Năm Rực Rỡ - Bội Thu Thắng Lợi 🏆",
-    "⛵ Công Việc Thuận Buồm Xuôi Gió - Trăm Trận Trăm Thắng ⚔️",
-    "📝 Ký Hợp Đồng Mỏi Tay - Khách Hàng Tấp Nập 📑",
-    "🍀 Vạn Sự Như Ý - Tỷ Sự Như Mơ 🍀",
-    "💎 Tài Lộc Bùng Nổ - Số Dư Ting Ting Liên Tục 📲",
-    "🚗 Xe Sang Nhà Đẹp - Cuộc Sống Nở Hoa 🏡",
-    "👨‍👩‍👧‍👦 Gia Đình Ấm Êm - Tràn Ngập Tiếng Cười ❤️",
-    "🥂 Hôm Nay Anh Hoàng Là Ngôi Sao Sáng Nhất 🥂",
-    "🎉 Tuổi Mới Bớt Cọc - Thêm Giàu - Cười Nhiều Hơn 🥳",
-    "🕊️ Bình An Trong Tâm Hồn - An Nhiên Mỗi Ngày 🍃",
-    "🌟 Quý Nhân Phù Trợ - Đi Đâu Cũng Được Yêu Quý 🌟",
-    "🎁 Cầu Được Ước Thấy - Vạn Điều Tốt Lành 🎁",
-    "✈️ Du Lịch Bốn Phương - Thảnh Thơi Hưởng Thụ 🏖️",
-    "🛍️ Shopping Thả Ga - Không Cần Nhìn Giá 💳",
-    "🍻 Nhậu Ngàn Chén Không Say - Anh Em Gắn Kết 🍻",
-    "🌈 Bọt Xà Bông Lấp Lánh - Đời Tươi Như Cầu Vồng 🌈",
-    "🧼 Tắm Trong Tiền Bạc - Thơm Ngát Vinh Quang 💎",
-    "👑 Đẳng Cấp Là Mãi Mãi - Anh Hoàng Là Duy Nhất 👑",
-    "🔥 Ý Tưởng Bùng Nổ - Dự Án Nào Cũng Thắng Lớn 💡",
-    "🪄 Deadline Tự Biến Mất - Task Nào Cũng Xong Xuôi 🪄",
-    "🎯 Nhắm Đâu Trúng Đó - Đạt Mọi KPI 🎯",
-    "🍰 Ăn Bánh Sinh Nhật Tẹt Ga - Không Sợ Tăng Cân 🎂",
-    "💸 Ngồi Không Tiền Cũng Rơi Trúng Đầu 💸",
-    "❤️ Tình Cảm Thăng Hoa - Đời Đẹp Như Mơ 💖",
-    "⚡ Năng Lượng Đầy Bình - Bứt Phá Mọi Giới Hạn ⚡",
-    "🌈 Vạn Dặm Bình An - Triệu Niềm Vui Gõ Cửa 🌈",
-    "😄 Nụ Cười Rạng Rỡ - May Mắn Ngập Tràn 😄",
-    "🍾 Khui Champagne Ăn Mừng Sinh Nhật Rực Rỡ 🍾",
-    "🏔️ Tuổi Mới Đón Vận Hội Mới - Chinh Phục Đỉnh Cao 🏔️",
-    "🎈 Tuổi Mới Tự Do - Phóng Khoáng - Yêu Đời 🎈",
-    "🥇 Luôn Là Phiên Bản Xuất Sắc Nhất Của Chính Mình 🥇",
-    "🌟 Đại Ca Xà Bông Hoàng Sinh Nhật Vui Vẻ! 🌟",
-    "💎 Kim Cương Bất Hoại - Vững Vàng Trước Sóng Gió 🌊",
-    "☕ Sáng Thong Thả Cafe - Chiều Đếm Tiền Mỏi Tay ☕",
-    "🏄‍♂️ Lướt Trên Mọi Sóng Gió Một Cách Điệu Nghệ 🏄‍♂️",
-    "🎯 Mục Tiêu Năm Nay X2 - Doanh Số Bứt Phá X10 🚀",
-    "🥳 Quẩy Hết Mình Cùng Anh Em Trong Ngày Sinh Nhật 🥳",
-    "🍀 Số Đỏ Quanh Năm - Vận May Luôn Bên Cạnh 🍀",
-    "🏡 Đất Đai Thẳng Cánh Cò Bay - Sổ Đỏ Xếp Chồng 🏡",
-    "👑 Đại Gia Xà Bông Hoàng - Trùm Phong Độ 👑",
-    "🎂 Happy Birthday Anh Hoàng - Tuổi Mới Đại Thắng! 🎂"
+    "🎂 Chúc Mừng Sinh Nhật Hữu Lãm! 🎂",
+    "🎉 Happy Birthday, Hữu Lãm! 🥳",
+    "🌟 Hôm Nay Là Ngày Của Hữu Lãm!",
+    "🎁 Tuổi Mới Cực Vui Và Đáng Nhớ!",
+    "😎 Chúc Lãm Ngày Càng Phong Độ!",
+    "✨ Tuổi Mới Rực Rỡ Hơn Tuổi Cũ!",
+    "💪 Khỏe Mạnh Và Tràn Đầy Năng Lượng!",
+    "🍀 May Mắn Luôn Bên Cạnh Lãm!",
+    "💸 Tiền Vào Như Nước, Ví Luôn Rủng Rỉnh!",
+    "🚀 Mọi Dự Định Đều Thuận Lợi!",
+    "🎈 Một Năm Nhiều Tin Vui Bất Ngờ!",
+    "❤️ Luôn Có Người Thương Và Bạn Tốt!",
+    "🥰 Gia Đình Bình An, Bạn Bè Gắn Kết!",
+    "🎂 Ăn Bánh Sinh Nhật Thật Ngon Nha!",
+    "🎊 Hết Mình Trong Ngày Đặc Biệt!",
+    "🌈 Luôn Giữ Nụ Cười Trên Môi!",
+    "🌻 Tinh Thần Tích Cực Cả Năm!",
+    "💎 Chúc Hữu Lãm Luôn Tỏa Sáng!",
+    "📸 Thêm Thật Nhiều Kỷ Niệm Đẹp!",
+    "🧳 Thích Đi Đâu Là Xách Ba Lô Lên!",
+    "☕ Cà Phê Ngon, Chuyện Trò Vui!",
+    "🎧 Nghe Được Thật Nhiều Bài Hay!",
+    "🌠 Ước Mơ Đến Gần Hơn Từng Ngày!",
+    "🔥 Đam Mê Luôn Cháy Hết Mình!",
+    "🏆 Đạt Được Những Mục Tiêu Đã Đặt Ra!",
+    "😄 Bớt Lo Nghĩ, Thêm Tiếng Cười!",
+    "🌤️ Ngày Nào Cũng Có Điều Để Vui!",
+    "🎮 Chơi Vui, Làm Giỏi, Nghỉ Thoải Mái!",
+    "💰 Làm Đâu Thắng Đó, Tiết Kiệm Cũng Đỉnh!",
+    "🕊️ Bình An Trong Lòng, Tự Tin Phía Trước!",
+    "🫶 Chúc Tình Bạn Mãi Bền Lâu!",
+    "🥳 Quẩy Một Ngày Sinh Nhật Đúng Nghĩa!",
+    "📈 Nâng Cấp Bản Thân Mỗi Ngày!",
+    "✨ Gặp Toàn Những Điều Tốt Đẹp!",
+    "🌸 Mọi Khó Khăn Đều Sớm Qua Đi!",
+    "💫 Vẫn Là Hữu Lãm Cực Chất!",
+    "🎁 Bất Ngờ Nào Cũng Là Bất Ngờ Vui!",
+    "🎯 Làm Gì Cũng Có Hướng Đi Rõ Ràng!",
+    "🚗 Đường Đời Luôn Thuận Lợi Và An Toàn!",
+    "🌍 Khám Phá Thêm Nhiều Điều Hay Ho!",
+    "🍜 Món Ngon Luôn Chờ Được Thưởng Thức!",
+    "💖 Yêu Thương Và Được Yêu Thương!",
+    "🌟 Tuổi Mới, Phiên Bản Xịn Hơn!",
+    "🔥 Chúc Mọi Việc Đều Suôn Sẻ!",
+    "🍰 Hôm Nay Phải Vui Hết Nấc!",
+    "🎉 Cười Thật Nhiều Cùng Hội Bạn!",
+    "🎁 Có Quà Xịn, Có Lời Chúc Hay!",
+    "🥂 Những Cuộc Hẹn Thật Đáng Nhớ!",
+    "💫 Một Chương Mới Tràn Đầy Hy Vọng!",
+    "🎂 Sinh Nhật Vui Vẻ Nha, Hữu Lãm!"
   ]
 };
