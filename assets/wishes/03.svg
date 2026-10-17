@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#7c3274"/><stop offset="1" stop-color="#27122f"/></linearGradient><radialGradient id="glow"><stop stop-color="#ffd9ad" stop-opacity=".25"/><stop offset="1" stop-color="#ffd9ad" stop-opacity="0"/></radialGradient></defs>
+<rect width="720" height="720" fill="url(#bg)"/><circle cx="520" cy="160" r="280" fill="url(#glow)"/>
+<g fill="#ffd9ad" opacity=".55"><circle cx="96" cy="126" r="3"/><circle cx="602" cy="252" r="4"/><circle cx="525" cy="550" r="2"/><circle cx="164" cy="584" r="4"/><circle cx="445" cy="95" r="2"/></g>
+<rect x="43" y="43" width="634" height="634" rx="30" fill="none" stroke="#ffd9ad" stroke-opacity=".5" stroke-width="2"/>
+<text x="360" y="155" fill="#ffd9ad" font-family="Arial,sans-serif" font-size="25" letter-spacing="6" text-anchor="middle">03 / SMILE</text>
+<text x="360" y="318" fill="#fff" font-family="Arial,sans-serif" font-weight="bold" font-size="64" text-anchor="middle">LUÔN VUI VẺ</text>
+<text x="360" y="401" fill="#fff" font-family="Arial,sans-serif" font-weight="bold" font-size="54" text-anchor="middle">VÀ PHONG ĐỘ</text>
+<path d="M230 455 H490" stroke="#ffd9ad" stroke-width="2" opacity=".65"/>
+<text x="360" y="518" fill="#fff" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">Giữ nụ cười ấy nhé</text>
+<text x="360" y="622" fill="#ffd9ad" font-family="Arial,sans-serif" font-size="24" letter-spacing="3" text-anchor="middle">HỮU LÃM • 2026</text>
+</svg>

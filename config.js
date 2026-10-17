@@ -1,72 +1,48 @@
-/**
- * Thiệp chúc mừng sinh nhật 3D dành riêng cho Hữu Lãm.
- * Chỉnh sửa từ mẫu gốc: https://github.com/Vuiver/thiep-chuc-mung
- * Khai báo qua window.CARD_CONFIG để index.html đọc được chính xác.
- */
-window.CARD_CONFIG = {
-  recipientName: "Hữu Lãm",
-  occasionTitle: "Chúc Mừng Sinh Nhật",
-  musicUrl: "happy-birthday.mp3",
-  photos: ["huu-lam.jpg"],
-  giftSettings: {
-    enableTeddyBear: true,
-    enableFlowerBouquet: true,
-    enableBirthdayCake: true,
-    enableGiftBox: true,
-    enableHeart: true,
-    enableBalloon: true,
-    giftDensity: 28
-  },
-  messages: [
-    "🎂 Chúc Mừng Sinh Nhật Hữu Lãm! 🎂",
-    "🎉 Happy Birthday, Hữu Lãm! 🥳",
-    "🌟 Hôm Nay Là Ngày Của Hữu Lãm!",
-    "🎁 Tuổi Mới Cực Vui Và Đáng Nhớ!",
-    "😎 Chúc Lãm Ngày Càng Phong Độ!",
-    "✨ Tuổi Mới Rực Rỡ Hơn Tuổi Cũ!",
-    "💪 Khỏe Mạnh Và Tràn Đầy Năng Lượng!",
-    "🍀 May Mắn Luôn Bên Cạnh Lãm!",
-    "💸 Tiền Vào Như Nước, Ví Luôn Rủng Rỉnh!",
-    "🚀 Mọi Dự Định Đều Thuận Lợi!",
-    "🎈 Một Năm Nhiều Tin Vui Bất Ngờ!",
-    "❤️ Luôn Có Người Thương Và Bạn Tốt!",
-    "🥰 Gia Đình Bình An, Bạn Bè Gắn Kết!",
-    "🎂 Ăn Bánh Sinh Nhật Thật Ngon Nha!",
-    "🎊 Hết Mình Trong Ngày Đặc Biệt!",
-    "🌈 Luôn Giữ Nụ Cười Trên Môi!",
-    "🌻 Tinh Thần Tích Cực Cả Năm!",
-    "💎 Chúc Hữu Lãm Luôn Tỏa Sáng!",
-    "📸 Thêm Thật Nhiều Kỷ Niệm Đẹp!",
-    "🧳 Thích Đi Đâu Là Xách Ba Lô Lên!",
-    "☕ Cà Phê Ngon, Chuyện Trò Vui!",
-    "🎧 Nghe Được Thật Nhiều Bài Hay!",
-    "🌠 Ước Mơ Đến Gần Hơn Từng Ngày!",
-    "🔥 Đam Mê Luôn Cháy Hết Mình!",
-    "🏆 Đạt Được Những Mục Tiêu Đã Đặt Ra!",
-    "😄 Bớt Lo Nghĩ, Thêm Tiếng Cười!",
-    "🌤️ Ngày Nào Cũng Có Điều Để Vui!",
-    "🎮 Chơi Vui, Làm Giỏi, Nghỉ Thoải Mái!",
-    "💰 Làm Đâu Thắng Đó, Tiết Kiệm Cũng Đỉnh!",
-    "🕊️ Bình An Trong Lòng, Tự Tin Phía Trước!",
-    "🫶 Chúc Tình Bạn Mãi Bền Lâu!",
-    "🥳 Quẩy Một Ngày Sinh Nhật Đúng Nghĩa!",
-    "📈 Nâng Cấp Bản Thân Mỗi Ngày!",
-    "✨ Gặp Toàn Những Điều Tốt Đẹp!",
-    "🌸 Mọi Khó Khăn Đều Sớm Qua Đi!",
-    "💫 Vẫn Là Hữu Lãm Cực Chất!",
-    "🎁 Bất Ngờ Nào Cũng Là Bất Ngờ Vui!",
-    "🎯 Làm Gì Cũng Có Hướng Đi Rõ Ràng!",
-    "🚗 Đường Đời Luôn Thuận Lợi Và An Toàn!",
-    "🌍 Khám Phá Thêm Nhiều Điều Hay Ho!",
-    "🍜 Món Ngon Luôn Chờ Được Thưởng Thức!",
-    "💖 Yêu Thương Và Được Yêu Thương!",
-    "🌟 Tuổi Mới, Phiên Bản Xịn Hơn!",
-    "🔥 Chúc Mọi Việc Đều Suôn Sẻ!",
-    "🍰 Hôm Nay Phải Vui Hết Nấc!",
-    "🎉 Cười Thật Nhiều Cùng Hội Bạn!",
-    "🎁 Có Quà Xịn, Có Lời Chúc Hay!",
-    "🥂 Những Cuộc Hẹn Thật Đáng Nhớ!",
-    "💫 Một Chương Mới Tràn Đầy Hy Vọng!",
-    "🎂 Sinh Nhật Vui Vẻ Nha, Hữu Lãm!"
-  ]
+/** Thiệp sinh nhật Hữu Lãm, chuyển thể từ Milky Way 3D của PhelanDev. */
+const GALAXY_CONFIG = {
+    "title": {
+        "browserTab": "🎂 Chúc mừng sinh nhật Hữu Lãm!",
+        "terminalHeader": "root@huu-lam-birthday:~",
+        "envelopeTitle": "🎁 Hữu Lãm ơi, mở quà nè!",
+        "senderSignature": "— Một người bạn gửi đến Hữu Lãm ✨"
+    },
+    "youtube": {
+        "videoId": "",
+        "playlistId": ""
+    },
+    "feedbackUrl": "",
+    "loiNhan": "🎂 Hữu Lãm ơi, chúc mừng sinh nhật! Chúc ông tuổi mới thật nhiều sức khỏe, vui vẻ, may mắn và luôn tự tin theo đuổi điều mình thích. Mong mọi dự định đều thuận lợi, có thêm nhiều chuyến đi thú vị và thật nhiều kỷ niệm đáng nhớ. Happy Birthday, bro! ✨",
+    "tocDoGoChu": 45,
+    "thoiGianChoDungHinh": 3200,
+    "bootLines": [
+        "HUU-LAM-OS • Đang khởi động món quà đặc biệt... [OK]",
+        "Đang kết nối đến vũ trụ sinh nhật... [OK]",
+        "Đang nạp bánh kem và những điều may mắn... [OK]",
+        "Kiểm tra mức độ phong độ của Hữu Lãm... [100%]",
+        "Chuẩn bị ảnh kỷ niệm... [OK]",
+        "Đếm ngược đến bất ngờ... [3...2...1]",
+        "Hệ thống sẵn sàng. Chúc mừng sinh nhật! 🎂"
+    ],
+    "gallery": [
+        {
+            "img": "huu-lam.jpg",
+            "note": "Hữu Lãm – nhân vật chính trong ngày hôm nay! 🎂 Chúc ông có một sinh nhật thật vui và một năm nhiều trải nghiệm thú vị."
+        },
+        {
+            "img": "assets/wishes/01.svg",
+            "note": "Chúc Hữu Lãm tuổi mới tràn đầy năng lượng, luôn khỏe mạnh và gặp thật nhiều điều tốt đẹp!"
+        },
+        {
+            "img": "assets/wishes/02.svg",
+            "note": "Mong những kế hoạch, dự định và điều Lãm mong chờ đều dần trở thành hiện thực."
+        },
+        {
+            "img": "assets/wishes/03.svg",
+            "note": "Cứ tự tin, vui vẻ và sống thật hết mình. Hãy tạo thêm nhiều kỷ niệm đáng nhớ nhé!"
+        },
+        {
+            "img": "assets/wishes/04.svg",
+            "note": "Happy Birthday, Hữu Lãm! Mong mỗi ngày của ông đều có lý do để mỉm cười. 🌟"
+        }
+    ]
 };

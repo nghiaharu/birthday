@@ -1,29 +1,24 @@
-# 🎂 Thiệp sinh nhật Hữu Lãm
+# 🎂 Sinh nhật Hữu Lãm — Ngân Hà 3D
 
-**Thiệp trực tiếp (GitHub Pages):** https://nghiaharu.github.io/birthday/
+**Thiệp trực tiếp:** https://nghiaharu.github.io/birthday/
 
-Thiệp 3D dành riêng cho **Hữu Lãm**, được tùy biến từ [Vuiver/thiep-chuc-mung](https://github.com/Vuiver/thiep-chuc-mung).
+Thiệp được cá nhân hóa cho **Hữu Lãm**, chuyển thể từ [Milky Way 3D Birthday Card](https://github.com/nalfeidev/milky-way-3d-birthday-card) của **PhelanDev** theo MIT License.
 
-## Nội dung
+## Trải nghiệm
+- Màn hình khởi động, phong bì mở quà, lời chúc tiếng Việt hiện từng chữ.
+- Ngân hà 3D, trái tim, ảnh thật **huu-lam.jpg** và bốn thẻ lời chúc.
+- Nhạc Happy Birthday được phát từ `happy-birthday.mp3` khi người nhận chạm mở quà.
+- Nhấp ảnh trong dải ngân hà để đọc lời chúc.
+- Bấm nhanh 5 lần vào trái tim để mở khung lời nhắn bí mật; nút **Sao chép** chỉ sao chép vào clipboard, không tự gửi.
 
-- 🎉 50 lời chúc sinh nhật bằng tiếng Việt.
-- 📷 Ảnh Hữu Lãm dùng làm ảnh nền và khung Polaroid 3D.
-- 🎂 Bánh sinh nhật, quà, gấu bông, hoa và bóng bay tương tác.
-- 🎵 Nhạc sinh nhật, pháo giấy và hiệu ứng 3D.
-- 📱 Hỗ trợ trên điện thoại và máy tính.
+## Tùy chỉnh
+- `config.js`: thông tin người nhận, lời chúc, ảnh, thời gian hiệu ứng.
+- `huu-lam.jpg`: ảnh chân dung độ phân giải gốc.
+- `assets/wishes/`: 4 thẻ lời chúc cá nhân hóa dạng SVG.
+- `css/style.css` và `js/`: giao diện, hiệu ứng của mẫu gốc có chỉnh sửa.
 
-## Cấu hình
+## Triển khai
+GitHub → Settings → Pages → Deploy from a branch → main → /(root). Chờ GitHub Pages cập nhật sau khi push.
 
-Chỉnh người nhận và lời chúc trong `config.js`, giữ định dạng `window.CARD_CONFIG = {...}`.
-
-**Ảnh chất lượng cao:** tải ảnh gốc `huu-lam.jpg` (1290×1738) lên thư mục gốc của repo bằng giao diện **Add file → Upload files → Commit changes**. `index.html` và `config.js` đã cấu hình ưu tiên ảnh JPG, và tự dùng bản `huu-lam.svg` nếu JPG chưa có. Không cần sửa lại code sau khi tải ảnh lên.
-
-Trang sử dụng Three.js và nhạc nền từ mẫu gốc. Trên điện thoại, có thể cần chạm vào màn hình để bật nhạc.
-
-## Bật GitHub Pages
-
-Vào **Settings → Pages → Build and deployment** → `Deploy from a branch` → `main`, `/(root)` → **Save**.
-
-## Nguồn
-
-Chỉnh sửa từ [Vuiver/thiep-chuc-mung](https://github.com/Vuiver/thiep-chuc-mung). Ghi nhận tác giả gốc và giữ tinh thần của dự án.
+## Bản quyền
+Mã nguồn gốc bởi PhelanDev, xem `LICENSE`. Ảnh cá nhân thuộc người cung cấp. Mẫu trước đây được sao lưu ở nhánh `backup-original-3d-20261017`.

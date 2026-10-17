@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#18478b"/><stop offset="1" stop-color="#0b1434"/></linearGradient><radialGradient id="glow"><stop stop-color="#aee9ff" stop-opacity=".25"/><stop offset="1" stop-color="#aee9ff" stop-opacity="0"/></radialGradient></defs>
+<rect width="720" height="720" fill="url(#bg)"/><circle cx="520" cy="160" r="280" fill="url(#glow)"/>
+<g fill="#aee9ff" opacity=".55"><circle cx="96" cy="126" r="3"/><circle cx="602" cy="252" r="4"/><circle cx="525" cy="550" r="2"/><circle cx="164" cy="584" r="4"/><circle cx="445" cy="95" r="2"/></g>
+<rect x="43" y="43" width="634" height="634" rx="30" fill="none" stroke="#aee9ff" stroke-opacity=".5" stroke-width="2"/>
+<text x="360" y="155" fill="#aee9ff" font-family="Arial,sans-serif" font-size="25" letter-spacing="6" text-anchor="middle">02 / DREAM</text>
+<text x="360" y="318" fill="#fff" font-family="Arial,sans-serif" font-weight="bold" font-size="64" text-anchor="middle">MỌI DỰ ĐỊNH</text>
+<text x="360" y="401" fill="#fff" font-family="Arial,sans-serif" font-weight="bold" font-size="54" text-anchor="middle">ĐỀU THÀNH CÔNG</text>
+<path d="M230 455 H490" stroke="#aee9ff" stroke-width="2" opacity=".65"/>
+<text x="360" y="518" fill="#fff" font-family="Arial,sans-serif" font-size="26" text-anchor="middle">Chúc Lãm thuận buồm xuôi gió</text>
+<text x="360" y="622" fill="#aee9ff" font-family="Arial,sans-serif" font-size="24" letter-spacing="3" text-anchor="middle">HỮU LÃM • 2026</text>
+</svg>
