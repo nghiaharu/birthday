@@ -1,10 +1,11 @@
-# Ảnh gốc của Diệu Anh / Danh
+# Ảnh gốc cho thiệp Diệu Anh (Danh)
 
-Hãy tải 5 tệp JPEG vào **đúng thư mục này** với các tên:
-- `danh-01.jpg` — ảnh ban đêm, ảnh preview khi gửi link
-- `danh-02.jpg` — ảnh avatar tròn
-- `danh-03.jpg` — ảnh xe
-- `danh-04.jpg` — ảnh thác Pa Sỹ
-- `danh-05.jpg` — ảnh nhóm bạn
+Đã tải đủ 5 tệp. Các đường dẫn chính xác dùng trong `config.js`:
 
-Giữ nguyên ảnh và thứ tự, không cần sửa `config.js` sau khi tải lên.
+1. `IMG_4972.jpeg` — ảnh chính, preview.
+2. `IMG_4971.jpeg` — acc phụ.
+3. `IMG_4973.jpeg` — chuyến xe.
+4. `IMG_4970.png` — thác Pa Sỹ.
+5. `IMG_4974.jpeg` — ảnh nhảy.
+
+Đừng đổi tên tệp mà không cập nhật `config.js` tương ứng.

@@ -11,19 +11,21 @@ Cá nhân hóa từ [Milky Way 3D Birthday Card](https://github.com/nalfeidev/mi
 - Dùng **ảnh 1** làm thumbnail chia sẻ link (OG image).
 - Giữ nguyên nhạc MP3; Easter Egg chỉ sao chép lời nhắn, không gửi dữ liệu.
 
-## Hoàn thiện 5 ảnh gốc
-Bộ ảnh gốc từ ChatGPT cần được tải lên GitHub qua **assets/photos/** trước khi thiệp hiển thị đúng ảnh thật.
+## Album ảnh đã tải lên
 
-1. Mở [assets/photos](https://github.com/nghiaharu/birthday/tree/main/assets/photos) trong GitHub.
-2. Chọn **Add file → Upload files**.
-3. Tải lên 5 tệp tên chính xác: `danh-01.jpg`, `danh-02.jpg`, `danh-03.jpg`, `danh-04.jpg`, `danh-05.jpg`.
-4. Chọn **Commit changes** trên nhánh `main`, chờ GitHub Pages triển khai rồi tải lại website.
+Đã tải đủ 5 ảnh lên `assets/photos/`; `config.js` tham chiếu trực tiếp tới **tên file có thật** trên GitHub, không yêu cầu đổi tên.
 
-Mã nguồn có ảnh dự phòng dạng SVG để tránh lỗi khi 5 tệp JPEG chưa được tải lên. Những ảnh dự phòng **không phải ảnh thật**.
+| Thứ tự | Tệp ảnh | Nội dung |
+| --- | --- | --- |
+| 1 | `IMG_4972.jpeg` | Diệu Anh trong ảnh chụp ban đêm, đồng thời là ảnh preview |
+| 2 | `IMG_4971.jpeg` | Ảnh đại diện tài khoản phụ |
+| 3 | `IMG_4973.jpeg` | Chuyến đi xe cùng Nghĩa |
+| 4 | `IMG_4970.png` | Thác Pa Sỹ |
+| 5 | `IMG_4974.jpeg` | Nhóm bạn nhảy |
 
-Các hình gốc không bị crop: ảnh 1 chân dung ban đêm, ảnh 2 avatar tròn, ảnh 3 xe, ảnh 4 thác Pa Sỹ, ảnh 5 nhóm bạn nhảy.
+Gallery hiện vẫn cắt về tỉ lệ vuông để đặt trong 3D; khi nhấn vào ảnh sẽ mở bản nguyên gốc theo đường dẫn trên.
 
-**Lưu ý quyền riêng tư:** repo public nên tất cả ảnh, kể cả biển số xe trong ảnh 3, sẽ truy cập công khai.
+**Lưu ý quyền riêng tư:** Repo công khai nên tất cả ảnh, kể cả biển số xe trong ảnh 3, đều có thể xem công khai.
 
 ## Giấy phép và sao lưu
 

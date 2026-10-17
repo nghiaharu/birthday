@@ -25,27 +25,27 @@ const GALAXY_CONFIG = {
     ],
     "gallery": [
         {
-            "img": "assets/photos/danh-01.jpg",
+            "img": "assets/photos/IMG_4972.jpeg",
             "fallbackImg": "assets/placeholders/danh-01.svg",
             "note": "Danh ơi – Gửi nhân vật chính của ngày hôm nay! 🎂 Chúc Danh có một ngày sinh nhật thậc là zui và có nhiều trải nghiệm thú zj nhiee. Quá xink!"
         },
         {
-            "img": "assets/photos/danh-02.jpg",
+            "img": "assets/photos/IMG_4971.jpeg",
             "fallbackImg": "assets/placeholders/danh-02.svg",
             "note": "Acc phụ cũng không thoát khỏi tay của Nghĩa nhé ^^"
         },
         {
-            "img": "assets/photos/danh-03.jpg",
+            "img": "assets/photos/IMG_4973.jpeg",
             "fallbackImg": "assets/placeholders/danh-03.svg",
             "note": "Chuýn xe Nghĩa chở Danh đi chơi nà!"
         },
         {
-            "img": "assets/photos/danh-04.jpg",
+            "img": "assets/photos/IMG_4970.png",
             "fallbackImg": "assets/placeholders/danh-04.svg",
             "note": "Danh đi đâu thế! Thác Pa Sỹ là ở đâu za"
         },
         {
-            "img": "assets/photos/danh-05.jpg",
+            "img": "assets/photos/IMG_4974.jpeg",
             "fallbackImg": "assets/placeholders/danh-05.svg",
             "note": "Đúng là người đẹp làm gì cũng đẹp, nhảy cũng đẹp wooo!!!!~~ 🌟"
         }
