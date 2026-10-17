@@ -55,6 +55,12 @@ class Interaction {
 
             createIconBurst();
             let selectedData = intersects[0].object.userData;
+            this.modalImg.dataset.fallback = selectedData.fallbackImg || "";
+            this.modalImg.onerror = () => {
+                const fallback = this.modalImg.dataset.fallback;
+                this.modalImg.onerror = null;
+                if (fallback) this.modalImg.src = fallback;
+            };
             this.modalImg.src = selectedData.img;
             this.modalText.innerText = selectedData.note; 
             this.noteModal.classList.add('active');

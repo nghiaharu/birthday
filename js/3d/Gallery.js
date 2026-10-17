@@ -64,7 +64,18 @@ class Gallery {
                 data.img,
                 texture => { applySquareCrop(texture, mesh); },
                 undefined,
-                err => { console.warn("Failed to load image, maybe CORS error? Ensure the image server allows CORS or use local images.", err); }
+                err => {
+                    if (data.fallbackImg) {
+                        this.textureLoader.load(
+                            data.fallbackImg,
+                            texture => { applySquareCrop(texture, mesh); },
+                            undefined,
+                            fallbackError => { console.warn("Gallery fallback failed:", fallbackError); }
+                        );
+                    } else {
+                        console.warn("Gallery photo failed:", err);
+                    }
+                }
             );
         });
     }

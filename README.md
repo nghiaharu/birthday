@@ -1,24 +1,30 @@
-# 🎂 Sinh nhật Hữu Lãm — Ngân Hà 3D
+# 🎂 Chúc mừng sinh nhật Diệu Anh (Danh) — Ngân Hà 3D
 
-**Thiệp trực tiếp:** https://nghiaharu.github.io/birthday/
+**Thiệp:** https://nghiaharu.github.io/birthday/
 
-Thiệp được cá nhân hóa cho **Hữu Lãm**, chuyển thể từ [Milky Way 3D Birthday Card](https://github.com/nalfeidev/milky-way-3d-birthday-card) của **PhelanDev** theo MIT License.
+Cá nhân hóa từ [Milky Way 3D Birthday Card](https://github.com/nalfeidev/milky-way-3d-birthday-card) của **PhelanDev** (MIT License). Thư viện Three.js, giao diện phong bì, ngân hà 3D và Easter Egg của mẫu gốc được giữ nguyên.
 
-## Trải nghiệm
-- Màn hình khởi động, phong bì mở quà, lời chúc tiếng Việt hiện từng chữ.
-- Ngân hà 3D, trái tim, ảnh thật **huu-lam.jpg** và bốn thẻ lời chúc.
-- Nhạc Happy Birthday được phát từ `happy-birthday.mp3` khi người nhận chạm mở quà.
-- Nhấp ảnh trong dải ngân hà để đọc lời chúc.
-- Bấm nhanh 5 lần vào trái tim để mở khung lời nhắn bí mật; nút **Sao chép** chỉ sao chép vào clipboard, không tự gửi.
+## Nội dung đã thay
+- Người nhận: Diệu Anh (biệt danh **Danh**), chữ ký cố ý dùng **Danhh**.
+- Terminal, phong bì, lời chúc, 7 dòng khởi động, 5 lời chú thích album đã thay bằng tiếng Việt.
+- Tốc độ gõ 160ms/ký tự, giống cấu hình mặc định tác giả; đợi 3200ms trước khi chuyển cảnh.
+- Dùng **ảnh 1** làm thumbnail chia sẻ link (OG image).
+- Giữ nguyên nhạc MP3; Easter Egg chỉ sao chép lời nhắn, không gửi dữ liệu.
 
-## Tùy chỉnh
-- `config.js`: thông tin người nhận, lời chúc, ảnh, thời gian hiệu ứng.
-- `huu-lam.jpg`: ảnh chân dung độ phân giải gốc.
-- `assets/wishes/`: 4 thẻ lời chúc cá nhân hóa dạng SVG.
-- `css/style.css` và `js/`: giao diện, hiệu ứng của mẫu gốc có chỉnh sửa.
+## Hoàn thiện 5 ảnh gốc
+Bộ ảnh gốc từ ChatGPT cần được tải lên GitHub qua **assets/photos/** trước khi thiệp hiển thị đúng ảnh thật.
 
-## Triển khai
-GitHub → Settings → Pages → Deploy from a branch → main → /(root). Chờ GitHub Pages cập nhật sau khi push.
+1. Mở [assets/photos](https://github.com/nghiaharu/birthday/tree/main/assets/photos) trong GitHub.
+2. Chọn **Add file → Upload files**.
+3. Tải lên 5 tệp tên chính xác: `danh-01.jpg`, `danh-02.jpg`, `danh-03.jpg`, `danh-04.jpg`, `danh-05.jpg`.
+4. Chọn **Commit changes** trên nhánh `main`, chờ GitHub Pages triển khai rồi tải lại website.
 
-## Bản quyền
-Mã nguồn gốc bởi PhelanDev, xem `LICENSE`. Ảnh cá nhân thuộc người cung cấp. Mẫu trước đây được sao lưu ở nhánh `backup-original-3d-20261017`.
+Mã nguồn có ảnh dự phòng dạng SVG để tránh lỗi khi 5 tệp JPEG chưa được tải lên. Những ảnh dự phòng **không phải ảnh thật**.
+
+Các hình gốc không bị crop: ảnh 1 chân dung ban đêm, ảnh 2 avatar tròn, ảnh 3 xe, ảnh 4 thác Pa Sỹ, ảnh 5 nhóm bạn nhảy.
+
+**Lưu ý quyền riêng tư:** repo public nên tất cả ảnh, kể cả biển số xe trong ảnh 3, sẽ truy cập công khai.
+
+## Giấy phép và sao lưu
+
+Giữ giấy phép MIT của PhelanDev trong `LICENSE`. Bản trước khi chuyển tên người nhận được lưu ở nhánh `backup-before-dieu-anh-20261017`.

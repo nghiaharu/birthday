@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1d716f"/><stop offset="1" stop-color="#133355"/></linearGradient><radialGradient id="r"><stop stop-color="#ffffff" stop-opacity=".14"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs>
+<rect width="640" height="640" fill="url(#g)"/><circle cx="430" cy="180" r="250" fill="url(#r)"/>
+<rect x="38" y="38" width="564" height="564" rx="30" stroke="#f9dcec" stroke-width="2" opacity=".7" fill="none"/>
+<text x="320" y="168" fill="#f7d6ee" text-anchor="middle" font-family="Arial,sans-serif" letter-spacing="5" font-size="25">HAPPY BIRTHDAY</text>
+<text x="320" y="303" fill="#fff" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="62">THÁC PA SỸ</text>
+<text x="320" y="372" fill="#fff" text-anchor="middle" font-family="Arial,sans-serif" font-size="25">Danh đi đâu thế?</text>
+<text x="320" y="525" fill="#f8d1ea" text-anchor="middle" font-family="Arial,sans-serif" letter-spacing="4" font-size="24">DIỆU ANH • 2026</text>
+</svg>
